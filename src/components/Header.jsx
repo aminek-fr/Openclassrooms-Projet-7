@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom';
 import logo from '../assets/Logo.svg';
-import '../styles/Header.css';
+//import '../sass/Layout/_header.scss';
  
 function Header() {
     return (
@@ -9,8 +9,8 @@ function Header() {
             <img src={logo} alt='Kasa' className='kasaLogo' />
             <nav>
                 <ul>
-                <Link to="/">Accueil</Link>
-                <Link to="/about">A Propos</Link>
+                  <li><Link to="/">ACCUEIL</Link></li>
+                  <li><Link to="/about">A PROPOS</Link></li>
                 </ul>
             </nav>
         </div>

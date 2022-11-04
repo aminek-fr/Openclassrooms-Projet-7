@@ -1,0 +1,15 @@
+//RESOLUTION ECRAN
+$breakpoints: (
+    "mobile": 500px,
+    "tablette": 768px,
+    "desktop": 900px,
+);
+
+//POLICE
+$policePrimary: 'Montserrat', sans-serif;
+
+//COULEURS
+$colorPrimary: #FF6060;
+$colorSecondary: #FF79DA;
+$colorTertiary: #99E2D0;
+$colorGradient: linear-gradient($colorSecondary, $colorPrimary);
