@@ -1,0 +1,51 @@
+/*
+//MIXIN RESOLUTION ECRAN
+@mixin mobile{
+    @media screen and (max-width: map-get($breakpoints, mobile)) {
+        @content;
+    }
+}
+
+@mixin tablette{
+    @media screen and (min-width: map-get($breakpoints, tablette)) {
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}
+
+//MIXIN FLEXBOX
+@mixin flexbox($value){
+    display: flex;
+    align-items: center;
+    justify-content: $value;
+}
+//BOUTON
+@mixin btn {
+    border-radius: 30px;
+    height: 50px;
+    width: 200px;
+    font-weight: bold;
+    border: transparent;
+}
+
+//HEART
+@mixin heart($top) {
+    position: absolute;
+    top: $top;
+    right: 25px;
+    font-size: x-large;
+}
+
+//ANIMATION
+@mixin transition {
+    @for $i from 1 through 20{
+    &:nth-child(#{$i}) {
+        animation: SlideDown #{$i * .5}s ease-in;
+      }
+    }
+}*/
