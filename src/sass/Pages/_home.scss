@@ -1,6 +1,11 @@
-.mainContainer {
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.mainContainer{
+    width: 100%;
+    margin: auto;
+    .sectionContainer {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
