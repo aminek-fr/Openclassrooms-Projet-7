@@ -1,10 +1,10 @@
 .headerContainer {
-    padding: 15px;
+    padding: 10px;
 	display: flex;
     align-items: center;
     justify-content: space-between;
     .kasaLogo {
-        width: 150px;
+        width: 120px;
     }
     ul{
         list-style: none;
@@ -13,76 +13,8 @@
     }
     li{
         color: #FF6060;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
         text-decoration-line: underline;
-        font-size: small;
+        font-size: 12px;
     }
 }
-
-
-
-/*header{
-    text-align: center;
-    margin: 0;
-}
-
-.logo{
-    padding: 25px 0px 10px 0px;
-}
-
-.barreRecherche{
-    background-color: #e3e3e3;
-    height: 50px;
-    @include flexbox(center);
-    flex-direction: column;
-
-    &__recherche{
-        padding: 0 10px;
-        background-color: #e3e3e3;
-        font-weight: bold;
-        color: black;
-        font-size: large;
-        text-align: center;
-        width: 150px;
-        border: transparent;
-    }
-
-    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        /*color: black;
-        opacity: 1; /* Firefox */
-     /* }
-      
-      :-ms-input-placeholder { /* Internet Explorer 10-11 */
-        /*color: black;
-      }
-      
-      ::-ms-input-placeholder { /* Microsoft Edge */
-       /* color: black;
-      }
-}
-
-.reservation{
-    height: 250px;
-    background-color: #F4F2F2;
-
-    &__titre{
-        margin: 0;
-        font-size: x-large;
-        padding: 20px 0px 15px;
-    }
-
-    p{
-        margin-top: 0;
-    }
-
-    &__btn{
-        @include btn;
-        margin-top: 20px;
-        color: #FFFFFF;
-        background: $colorGradient;
-        &:hover{
-            filter: brightness(120%);
-            box-shadow: rgba(85, 85, 85, 0.2) 0px 0px 20px;
-        }
-    }
-} */   

@@ -4,12 +4,9 @@ function Banner (){
     return (
         <div className='bannerContainer'>
             <img className='bannerImg' src={image} alt='img'></img> 
+            <p className='bannerTxt'>Chez vous,<br/>partout et ailleurs</p>
         </div>
     )
 }
 
 export default Banner
-/*
-<div className='kasa-container'>
-</div>*/
-//<p className='kasa-text'>Chez vous, partout et ailleurs</p>

@@ -6,10 +6,9 @@ console.log(Products)
 
 function Home() {
   return (
-    <main className="mainContainer">
-      <Banner />  
+    <main className="mainContainer">  
       <section className="sectionContainer">
-        
+        <Banner />
         {Products.map((product, index) => {
           return (
             <div key={index}>
@@ -25,18 +24,3 @@ function Home() {
 }
 
 export default Home;
-
-/*
-<h2>{product.title}</h2>
-            <img src={product.cover} alt='' />
-return(
-  <div className="cardContainer"> 
-      <div>
-      {Products.map((product) => {
-          return <h2>{product.title}</h2>;
-        })
-      
-
-      </div>
-  </div>   
-);*/
