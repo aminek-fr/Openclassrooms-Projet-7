@@ -10,9 +10,8 @@ function Slider(){
     return (
         <main className='mainContainer'>
             <section className='sectionContainer'>
-                <Carousel pictures={oneProduct?.pictures} />
+                <Carousel slides={oneProduct?.pictures} />
                 <div>{oneProduct?.tags}</div>
-                
             </section>
         </main>
     )
@@ -24,4 +23,8 @@ export default Slider
 const tagsLog = log?.tags.map((tags) => {
         return <p>{tags}</p>
     })
+    const id = useParams()
+    const oneProduct = Products.find(i => i.id === id.id);
+    <img src={oneProduct?.pictures} alt='' />
 <div>{tagsLog}</div>*/
+

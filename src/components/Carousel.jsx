@@ -1,41 +1,43 @@
-import { useState, useEffect } from 'react';
-import Vector from '../assets/Vector.svg'
 import '../sass/Layout/_carousel.scss'
- 
-function Carousel ({pictures}){
-    const [currentIndex, setCurrentIndex] = useState(0)
-    const length = pictures.length;
+import { useState } from "react";
+import vector from '../assets/Vector.svg'
+
+const Carousel = ({ slides }) => {
+    const [current, setCurrent] = useState(0);
+    const length = slides.length;
+
     const nextSlide = () => {
-        setCurrentIndex(currentIndex === length - 1 ? 0 : currentIndex + 1);
-      };
-    const prevSlide = () => {
-    setCurrentIndex(currentIndex === 0 ? length - 1 : currentIndex - 1);
+    setCurrent(current === length - 1 ? 0 : current + 1);
     };
 
-    return(
-        <div>
-            <img src={Vector} alt='' onClick={prevSlide} />
-        </div>
-    {pictures.map((image, props) => {
-        return(
-        <div className="carouselContainer">
-            <div className='carouselItem'>
-                <img key={props} className='carouselImg' src={image} alt='' />
+    const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+    };
+
+    return (
+    <div className='carouselContainer'>
+        {length > 1 && (
+        <img src={vector} onClick={prevSlide} className='vectorLeft' alt=''/>
+        )}
+
+        {length > 1 && (
+        <img src={vector} onClick={nextSlide} className='vectorRigth' alt=''/>
+        )}
+        
+        {slides.map((slide, index) => {
+        return (
+            <div key={index}>
+            {index === current && (
+                <img className='carouselImg' src={slide} alt="" />
+            )}
             </div>
-        </div>
-        )
-    )}
-    }
-    )
-}
+        );
+        })}
+    </div>
+    );
+};
 
-export default Carousel
+export default Carousel;
 
-/*<div className="left-arrow">
-      onClick={prevSlide}
-      </div>
-    
-    <div className="right-arrow">
-      onClick={nextSlide}
-      </div>*/
+
 
