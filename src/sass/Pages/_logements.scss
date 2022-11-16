@@ -39,7 +39,31 @@
             display: flex;
             width: 100%;
             justify-content: space-between;
+            align-items: center;
+            .containerName{
+                display: flex;
+                align-items: center;
+                .textName{
+                    font-size: 12px;
+                    color: #FF6060;
+                }
+                .pictureName{
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    margin-left: 10px;
+                }
+            }
+        }
+        .containerDescription{
             border: solid 2px blue;
+            h3, h4{
+                background-color: #FF6060;
+                color: #FFFFFF;
+                padding: 3px 18px 3px 18px;
+                border-radius: 5px;
+                font-size: 13px;
+            }
         }  
     }
 }

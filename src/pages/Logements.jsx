@@ -40,8 +40,18 @@ function Slider(){
                 <div className='containerStars'>
                     <div>{notLogement}</div>
                     <div className='containerName'>
-                        <div>{oneProduct?.host.name}</div>
-                        <div>{oneProduct.host.picture}</div>
+                        <p className='textName'>{oneProduct?.host.name}</p>
+                        <img className='pictureName' src={oneProduct.host.picture} alt='' />
+                    </div>
+                </div>
+                <div className='containerDescription'>
+                    <div className='description'>
+                        <h3>Description</h3>
+                        <p className='textDescription'>{oneProduct.description}</p>
+                    </div>
+                    <div className='equipement'>
+                        <h4>Equipements</h4>
+                        <p className='textEquipement'>{oneProduct.equipments}</p>
                     </div>
                 </div>
                 
