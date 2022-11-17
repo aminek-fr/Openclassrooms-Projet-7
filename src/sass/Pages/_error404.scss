@@ -1,0 +1,27 @@
+.containerError404{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h1{
+        font-size: 96px;
+        color: #FF6060;
+        font-weight: 700;
+        margin: 85px 0 0 0;
+    }
+    h2{
+        font-size: 18px;
+        color: #FF6060;
+        display: flex;
+        align-items: flex-end;
+        text-align: center;
+        font-weight: 500;
+    }
+    h3{
+        font-size: 14px;
+        color: #FF6060;
+        font-weight: 500;
+        margin-top: 100px;
+    }
+}

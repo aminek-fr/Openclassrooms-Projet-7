@@ -1,4 +1,5 @@
 import Carousel  from '../components/Carousel';
+import Dropdown from '../components/Dropdown';
 import Products from '../data/data.json';
 import { useParams } from 'react-router-dom';
 import StarColors from '../assets/StarColors.svg'
@@ -45,13 +46,9 @@ function Slider(){
                     </div>
                 </div>
                 <div className='containerDescription'>
-                    <div className='description'>
-                        <h3>Description</h3>
-                        <p className='textDescription'>{oneProduct.description}</p>
-                    </div>
+                    <Dropdown title="Description" description={oneProduct.description}/>
                     <div className='equipement'>
-                        <h4>Equipements</h4>
-                        <p className='textEquipement'>{oneProduct.equipments}</p>
+                        <Dropdown title="Equipements" description={oneProduct.equipments}/>
                     </div>
                 </div>
                 
@@ -69,3 +66,4 @@ export default Slider
                 /*<div className='containerTags'>
                     <div className='tags'>{tagsLog}</div>
                 </div>*/
+                /*<h3>Description</h3>*/

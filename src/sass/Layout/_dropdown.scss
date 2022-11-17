@@ -1,0 +1,26 @@
+.containerDropdown{
+    .dropdown{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 30px;
+        width: 100%;
+        background-color: #FF6060;
+        border-radius: 5px;
+        margin-bottom: 15px;
+    }
+    .titleDropdown{
+        color: #FFFFFF;
+        font-size: 13px;
+        margin-left: 10px;
+
+    }
+    .vector{
+        transform: rotate(-90deg);
+        margin-right: 10px;
+    }
+    .textDropdown{
+        color: #FF6060;
+        font-size: 12px;
+    }
+}

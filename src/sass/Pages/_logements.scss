@@ -56,13 +56,11 @@
             }
         }
         .containerDescription{
-            border: solid 2px blue;
-            h3, h4{
-                background-color: #FF6060;
-                color: #FFFFFF;
-                padding: 3px 18px 3px 18px;
-                border-radius: 5px;
-                font-size: 13px;
+            width: 100%;
+            margin-top: 10px;
+            .equipement{
+                display: flex;
+                flex-direction: column;
             }
         }  
     }
