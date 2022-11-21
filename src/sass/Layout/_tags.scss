@@ -1,0 +1,19 @@
+.containerTags{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .tags{
+        display: flex;
+        align-items: center;
+        height: 18px;
+        background-color: #FF6060;
+        border-radius: 5px;
+        margin: 10px 5px 0 0;
+        p{
+            color: #FFFFFF;
+            font-weight: 500;
+            padding: 10px;
+            font-size: 10px;
+        }
+    }
+}

@@ -3,8 +3,8 @@ import '../sass/Layout/_card.scss'
 function Card ({title, cover}){
     return(
         <div className="cardContainer"> 
-            <h2 className='productTitle'>{title}</h2>
-            <img className='productImg' src={cover} alt="" />
+            <h2 className='cardTitle'>{title}</h2>
+            <img className='cardImage' src={cover} alt="" />
         </div>   
     );
 }

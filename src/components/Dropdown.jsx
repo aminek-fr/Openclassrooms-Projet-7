@@ -16,7 +16,9 @@ const Dropdown = ({title, description}) => {
             <img className='vector' src={Vector} alt='' onClick={handleOpen} />
         </div>
         {open ? (
-          <p className='textDropdown'>{description}</p>
+          <div className='textDropdown'>
+            <p>{description}</p>
+          </div>
         ) : null}
       </div>
     );

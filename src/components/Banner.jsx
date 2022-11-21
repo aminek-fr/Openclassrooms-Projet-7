@@ -1,10 +1,10 @@
-import image from '../assets/Image.png'
+import image from '../assets/img.png'
 
 function Banner (){
     return (
         <div className='bannerContainer'>
-            <img className='bannerImg' src={image} alt='img' /> 
-            <p className='bannerTxt'>Chez vous,<br/>partout et ailleurs</p>
+            <img className='bannerImage' src={image} alt='img' />
+            <p className='bannerText'>Chez vous,<br/>partout et ailleurs</p>
         </div>
     )
 }
