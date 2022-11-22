@@ -1,13 +1,15 @@
-
 //@import "./Utils/mixins";
 @import "./Utils/variables";
 //@import "./Utils/keyframes";
 //@import "./Utils/animation";
 @import "./Base/base";
-@import "./Layout/header";
 @import "./Layout/banner";
-@import "./Layout/footer";
 @import "./Layout/card";
+@import "./Layout/carousel";
+@import "./Layout/dropdown";
+@import "./Layout/footer";
+@import "./Layout/header";
+@import "./Layout/tags";
 @import "./Pages/home";
 //@import "./Pages/menu";
 

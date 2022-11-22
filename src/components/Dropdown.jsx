@@ -1,27 +1,35 @@
+import { useState } from "react";
 import Vector from '../assets/Vector.svg'
 import '../sass/Layout/_dropdown.scss'
-import { useState } from "react";
 
 const Dropdown = ({title, description}) => {
-    const [open, setOpen] = useState(false);
-  
-    const handleOpen = () => {
-      setOpen(!open);
-    };
-  
-    return (
-      <div className="containerDropdown">
-        <div className='dropdown'>
-            <div className='titleDropdown'>{title}</div>
-            <img className='vector' src={Vector} alt='' onClick={handleOpen} />
-        </div>
-        {open ? (
-          <div className='textDropdown'>
-            <p>{description}</p>
-          </div>
-        ) : null}
-      </div>
-    );
+  const [open, setOpen] = useState(false);
+  const handleOpen = () => {
+    setOpen(!open);
   };
-  
-  export default Dropdown;
+  let newContent;
+  (typeof description === 'string') ? newContent = [description] : newContent = description;
+
+  return (
+    <div className="dropdownContainer">
+      <div className='dropdown'>
+          <div className='dropdownTitle'>{title}</div>
+          <img className='dropdownVector' src={Vector} alt='' onClick={handleOpen} />
+      </div>
+      {open ? (
+        <div className='dropdownText'>
+          {
+          newContent.map(item => (
+            <p className='dropdownText' key={item}>{item}</p>
+          ))
+          }
+          
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
+export default Dropdown;
+
+/*<p>{description}</p>*/

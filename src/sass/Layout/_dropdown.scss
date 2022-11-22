@@ -1,4 +1,4 @@
-.containerDropdown{
+.dropdownContainer{
     margin-bottom: 15px;
     .dropdown{
         display: flex;
@@ -8,25 +8,26 @@
         width: 100%;
         background-color: #FF6060;
         border-radius: 5px;
-        .titleDropdown{
+        .dropdownTitle{
             color: #FFFFFF;
             font-size: 13px;
             margin-left: 10px;
         }
-        .vector{
+        .dropdownVector{
             transform: rotate(-90deg);
             margin-right: 10px;
         }
     }
-    .textDropdown{
+    .dropdownText{
         background-color: #F6F6F6;
         border-radius: 5px;
-        padding: 10px;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         p{
             color: #FF6060;
             font-size: 12px;
+            /*padding: 0;*/
             margin: 0;
         }
     }
