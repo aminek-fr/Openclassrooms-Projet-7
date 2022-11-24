@@ -1,11 +1,10 @@
 @use '../Utils/variables' as *;
 @use '../Utils/mixins' as *;
 
-
 .dropdownContainer{
     margin-bottom: 15px;
     @include desktop{
-        width: 100%;
+        width: 47%;
     }
     .dropdown{
         @include flexbox(space-between);
@@ -16,13 +15,17 @@
         @include desktop{
             height: 52px;
             border-radius: 10px;
-            width: 45%;
+            width: 100%;
+
         }
         
         .dropdownTitle{
             color: $colorSecondary;
             font-size: 13px;
             margin-left: 10px;
+            @include desktop{
+                font-size: 18px;
+            }
         }
         .dropdownVector{
             transform: rotate(-90deg);
@@ -36,12 +39,15 @@
         display: flex;
         flex-direction: column;
         @include desktop{
-            width: 45%;
+            border-radius: 10px;
         }
         p{
             color: $colorPrimary;
             font-size: 12px;
             margin: 0;
+            @include desktop{
+                font-size: 18px;
+            }
         }
     }
 }

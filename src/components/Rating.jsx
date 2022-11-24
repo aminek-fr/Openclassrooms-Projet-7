@@ -1,15 +1,15 @@
-import StarEmpty from '../assets/StarEmpty.svg'
-import Star from '../assets/Star.svg'
+import StarEmpty from '../assets/StarEmpty.png'
+import Star from '../assets/Star.png'
  
  //Note étoiles
  const Rating = ({rating}) => {
     let notLogement = []
     for (let i = 0; i < 5; i++) {
         if (i < rating ){
-            notLogement.push(<img key={i} src={Star} alt='' />) 
+            notLogement.push(<img className='star'key={i} src={Star} alt='' />) 
         }else{
             notLogement.push(
-                <img key={i} src={StarEmpty} alt='' />
+                <img className='star' key={i} src={StarEmpty} alt='' />
             )
         }
     }

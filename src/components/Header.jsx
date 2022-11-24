@@ -3,7 +3,7 @@ import logo from '../assets/Logo.svg';
  
 function Header() {
     return (
-        <div className='headerContainer'>
+        <header className='headerContainer'>
             <img src={logo} alt='Kasa' className='kasaLogo' />
             <nav>
                 <ul>
@@ -11,7 +11,7 @@ function Header() {
                   <li><Link to="/about">A PROPOS</Link></li>
                 </ul>
             </nav>
-        </div>
+        </header>
     );
 }
 

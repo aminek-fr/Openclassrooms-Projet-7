@@ -4,12 +4,14 @@
 .containerError404{
     @include flexbox(center);
     flex-direction: column;
-
     h1{
         font-size: 96px;
         color: $colorPrimary;
         font-weight: 700;
         margin: 85px 0 0 0;
+        @include desktop{
+            font-size: 288px;
+        }
     }
     h2{
         font-size: 18px;
@@ -18,11 +20,17 @@
         align-items: flex-end;
         text-align: center;
         font-weight: 500;
+        @include desktop{
+            font-size: 36px;
+        }
     }
-    h3{
+    h3, a{
         font-size: 14px;
         color: $colorPrimary;
         font-weight: 500;
         margin-top: 100px;
+        @include desktop{
+            font-size: 18px;
+        }
     }
 }
