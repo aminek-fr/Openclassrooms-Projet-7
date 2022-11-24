@@ -1,13 +1,18 @@
 @use '../Utils/variables' as *;
 @use '../Utils//mixins' as *;
 
-.mainContainer{
+.mainContainerLogements{
     width: 100%;
     margin: auto;
-    .sectionContainer {
-        @include flexbox(space-around);
-        flex-wrap: wrap;
+    @include desktop{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .sectionContainerLogements {
         padding: 0 15px 15px 15px;
+        @include desktop{
+            padding: 0;
+        }
         .containerInformation{
             width: 100%;
             display: flex;
@@ -18,12 +23,18 @@
                 font-weight: 500;
                 font-size: 18px;
                 margin: 15px 0px 5px 0px;
+                @include desktop{
+                    font-size: 38px;
+                }
             }
             h2{
                 color: $colorPrimary;
                 font-weight: 500;
                 font-size: 14px;
                 margin: 5px 0px 5px 0px;
+                @include desktop{
+                    font-size: 18px;
+                }
             }
         }
         .containerStars{
@@ -48,9 +59,17 @@
         .containerDescription{
             width: 100%;
             margin-top: 10px;
+            @include desktop{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
             .equipement{
                 display: flex;
                 flex-direction: column;
+                @include desktop{
+                    width: 45%;
+                }
             }
         }  
     }

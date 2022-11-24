@@ -1,8 +1,15 @@
+@use '../Utils/variables' as *;
+@use '../Utils/mixins' as *;
+
 .carouselContainer{
     height: 255px;
     width: 100%;
     border-radius: 10px;
     position: relative;
+    @include desktop{
+        height: 415px;
+        border-radius: 25px;
+    }
     .vectorRigth {
         position: absolute;
         top: 45%;
@@ -19,6 +26,10 @@
         height: 255px;
         border-radius: 10px;
         background-size: cover;
+        @include desktop{
+            height: 415px;
+            border-radius: 25px;
+        }
     }
 }
 

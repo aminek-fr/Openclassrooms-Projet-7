@@ -1,14 +1,24 @@
 @use '../Utils/variables' as *;
 @use '../Utils/mixins' as *;
 
+
 .dropdownContainer{
     margin-bottom: 15px;
+    @include desktop{
+        width: 100%;
+    }
     .dropdown{
         @include flexbox(space-between);
         height: 30px;
         width: 100%;
         background-color: $colorPrimary;
         border-radius: 5px;
+        @include desktop{
+            height: 52px;
+            border-radius: 10px;
+            width: 45%;
+        }
+        
         .dropdownTitle{
             color: $colorSecondary;
             font-size: 13px;
@@ -25,6 +35,9 @@
         padding: 5px;
         display: flex;
         flex-direction: column;
+        @include desktop{
+            width: 45%;
+        }
         p{
             color: $colorPrimary;
             font-size: 12px;
@@ -32,3 +45,5 @@
         }
     }
 }
+
+

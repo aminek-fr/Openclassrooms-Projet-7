@@ -9,6 +9,9 @@
     background-color: black;
     color: $colorSecondary;
     margin-top: 15px;
+    @include desktop{
+        margin-top: 45px;
+    }
     p {
         margin: 40px 0 20px 0;
         font-style: normal;

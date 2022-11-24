@@ -11,8 +11,8 @@ function Slider(){
     const oneProduct = Products.find(i => i.id === id.id);
     
     return (
-        <main className='mainContainer'>
-            <section className='sectionContainer'>
+        <main className='mainContainerLogements'>
+            <section className='sectionContainerLogements'>
                 <Carousel slides={oneProduct?.pictures} />
                 <div className='containerInformation'>
                     <h1>{oneProduct?.title}</h1>
