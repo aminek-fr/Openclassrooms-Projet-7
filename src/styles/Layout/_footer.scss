@@ -1,12 +1,13 @@
+@use '../Utils/variables' as *;
+@use '../Utils/mixins' as *;
+
 .footerContainer {
+    @include flexbox(flex-end);
+    flex-direction: column;
     width: 100%;
     height: 180px;
     background-color: black;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
+    color: $colorSecondary;
     margin-top: 15px;
     p {
         margin: 40px 0 20px 0;

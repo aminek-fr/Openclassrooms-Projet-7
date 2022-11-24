@@ -4,7 +4,7 @@ import Rating from '../components/Rating';
 import Tags from '../components/Tags';
 import Products from '../data/data.json';
 import { useParams } from 'react-router-dom';
-import '../sass/Pages/_logements.scss';
+import '../styles/Pages/_logements.scss';
 
 function Slider(){
     const id = useParams()

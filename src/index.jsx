@@ -10,7 +10,7 @@ import Logement from './pages/Logements';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Error404 from './components/Error404';
-import './sass/main.scss';
+import './styles/main.scss';
 
 const container = document.getElementById('root');
 const root = createRoot(container); // createRoot(container!) if you use TypeScript

@@ -1,0 +1,30 @@
+@use '../Utils/mixins' as *;
+@use '../Utils/variables' as *;
+
+.mainContainer{
+    width: 100%;
+    margin: auto;
+    @include desktop{
+        max-width: 1440px;
+        //padding: 15px 100px;
+    }
+    .sectionContainer {
+        padding: 0 15px 15px 15px;
+        @include flexbox(space-around);
+        flex-wrap: wrap;
+        @include desktop{
+            max-width: 1440px;
+            padding: 0;
+        }
+        .articleContainer{
+            width: 100%;
+            height: 100%;
+            @include desktop{
+                width: 80%;
+                height: 100%;
+                background-color: $colorTertiary;
+            }
+        }
+    }
+}
+

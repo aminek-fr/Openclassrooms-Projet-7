@@ -1,8 +1,15 @@
+@use '../Utils/variables' as *;
+@use '../Utils/mixins' as *;
+
 .headerContainer {
+    @include flexbox(space-between);
     padding: 15px;
-	display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include desktop{
+        @include flexbox(space-between);
+        max-width: 1440px;
+        width: 80%;
+        //margin: 0 auto;
+    }
     .kasaLogo {
         width: 110px;
     }
@@ -12,7 +19,7 @@
         align-items: center;
     }
     a{
-        color: #FF6060;
+        color: $colorPrimary;
         margin: 0 0 0 10px;
         font-style: normal;
         font-weight: 500;

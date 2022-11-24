@@ -1,15 +1,16 @@
+@use '../Utils/variables' as *;
+@use '../Utils/mixins' as *;
+
 .dropdownContainer{
     margin-bottom: 15px;
     .dropdown{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flexbox(space-between);
         height: 30px;
         width: 100%;
-        background-color: #FF6060;
+        background-color: $colorPrimary;
         border-radius: 5px;
         .dropdownTitle{
-            color: #FFFFFF;
+            color: $colorSecondary;
             font-size: 13px;
             margin-left: 10px;
         }
@@ -19,15 +20,14 @@
         }
     }
     .dropdownText{
-        background-color: #F6F6F6;
+        background-color: $colorTertiary;
         border-radius: 5px;
         padding: 5px;
         display: flex;
         flex-direction: column;
         p{
-            color: #FF6060;
+            color: $colorPrimary;
             font-size: 12px;
-            /*padding: 0;*/
             margin: 0;
         }
     }

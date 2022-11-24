@@ -1,4 +1,5 @@
-/*
+@use '../Utils/variables' as *;
+
 //MIXIN RESOLUTION ECRAN
 @mixin mobile{
     @media screen and (max-width: map-get($breakpoints, mobile)) {
@@ -24,22 +25,6 @@
     align-items: center;
     justify-content: $value;
 }
-//BOUTON
-@mixin btn {
-    border-radius: 30px;
-    height: 50px;
-    width: 200px;
-    font-weight: bold;
-    border: transparent;
-}
-
-//HEART
-@mixin heart($top) {
-    position: absolute;
-    top: $top;
-    right: 25px;
-    font-size: x-large;
-}
 
 //ANIMATION
 @mixin transition {
@@ -48,4 +33,4 @@
         animation: SlideDown #{$i * .5}s ease-in;
       }
     }
-}*/
+}

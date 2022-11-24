@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Vector from '../assets/Vector.svg'
-import '../sass/Layout/_dropdown.scss'
+import '../styles/Layout/_dropdown.scss'
 
 const Dropdown = ({title, description}) => {
   const [open, setOpen] = useState(false);

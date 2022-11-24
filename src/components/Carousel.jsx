@@ -1,4 +1,4 @@
-import '../sass/Layout/_carousel.scss'
+import '../styles/Layout/_carousel.scss'
 import { useState } from "react";
 import vector from '../assets/Vector.svg'
 

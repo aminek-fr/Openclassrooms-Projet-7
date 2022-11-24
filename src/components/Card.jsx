@@ -1,4 +1,4 @@
-import '../sass/Layout/_card.scss'
+import '../styles/Layout/_card.scss'
 
 function Card ({title, cover}){
     return(

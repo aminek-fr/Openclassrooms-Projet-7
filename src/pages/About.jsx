@@ -1,6 +1,6 @@
 import Dropdown from '../components/Dropdown';
 import Banner from '../assets/About.png'
-import '../sass/Pages/_about.scss'
+import '../styles/Pages/_about.scss'
 
 function About() { 
     return (

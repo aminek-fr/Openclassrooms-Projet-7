@@ -1,3 +1,5 @@
+@use '../Utils/variables' as *;
+
 .containerTags{
     width: 100%;
     display: flex;
@@ -6,11 +8,11 @@
         display: flex;
         align-items: center;
         height: 18px;
-        background-color: #FF6060;
+        background-color: $colorPrimary;
         border-radius: 5px;
         margin: 10px 5px 0 0;
         p{
-            color: #FFFFFF;
+            color: $colorSecondary;
             font-weight: 500;
             padding: 10px;
             font-size: 10px;

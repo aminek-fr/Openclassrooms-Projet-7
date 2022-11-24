@@ -1,4 +1,4 @@
-import '../sass/Layout/_tags.scss'
+import '../styles/Layout/_tags.scss'
 
 const Tag = ({tagsLodging}) => {
     return(

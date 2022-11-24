@@ -1,3 +1,5 @@
+@use '../Utils/variables' as *;
+
 .cardContainer{
     height: 255px;
     width: 100%;
@@ -5,7 +7,7 @@
     margin-top: 20px;
     position: relative;
     .cardTitle{
-        color: white;
+        color: $colorSecondary;
         position: absolute;
         size: 50px;
         bottom: 5px;
