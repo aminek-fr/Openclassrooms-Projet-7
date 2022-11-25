@@ -3,6 +3,7 @@
 
 .dropdownContainer{
     margin-bottom: 15px;
+    width: 100%;
     @include desktop{
         width: 47%;
     }
@@ -16,9 +17,7 @@
             height: 52px;
             border-radius: 10px;
             width: 100%;
-
         }
-        
         .dropdownTitle{
             color: $colorSecondary;
             font-size: 13px;
