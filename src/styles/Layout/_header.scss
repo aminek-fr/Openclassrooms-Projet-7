@@ -5,13 +5,15 @@
     @include flexbox(space-between);
     padding: 15px;
     @include desktop{
-        //@include flexbox(space-between);
         margin: 0 auto;
         max-width: 1440px;
         width: 90%;
     }
     .kasaLogo {
         width: 110px;
+        @include desktop{
+            width: 160px;
+        }
     }
     ul{
         list-style: none;

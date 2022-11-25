@@ -18,6 +18,14 @@
             height: 100%;
             @include flexbox(space-around);
             flex-wrap: wrap;
+            @include tablette{
+                width: 100%;
+                height: 100%;
+                margin: 20px 0 20px 0;
+                padding-bottom: 30px;
+                border-radius: 25px;
+                background-color: $colorTertiary;
+            }
             @include desktop{
                 width: 90%;
                 height: 100%;
