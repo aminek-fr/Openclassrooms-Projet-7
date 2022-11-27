@@ -13,17 +13,17 @@ function Slider(){
     return (
         <main className='mainContainerLogements'>
             <section className='sectionContainerLogements'>
-                <Carousel slides={oneProduct?.pictures} />
+                <Carousel slides={oneProduct.pictures} />
                 <article className='articleContainerLogements'>
                     <div className='containerInformation'>
-                        <h1>{oneProduct?.title}</h1>
-                        <h2>{oneProduct?.location}</h2>
+                        <h1>{oneProduct.title}</h1>
+                        <h2>{oneProduct.location}</h2>
                         <Tags tagsLodging={oneProduct.tags} />
                     </div>
                     <div className='containerStars'>
                         <Rating rating={oneProduct.rating}/>
                         <div className='containerName'>
-                            <p className='textName'>{oneProduct?.host.name}</p>
+                            <p className='textName'>{oneProduct.host.name}</p>
                             <img className='pictureName' src={oneProduct.host.picture} alt='' />
                         </div>
                     </div>

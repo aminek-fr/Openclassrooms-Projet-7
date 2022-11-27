@@ -1,6 +1,7 @@
 import Card from '../components/Card';
 import Products from '../data/data.json';
 import { Link } from 'react-router-dom';
+import '../styles/Pages/_home.scss';
 
 function Home() {
   return (

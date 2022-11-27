@@ -4,6 +4,7 @@ import Star from '../assets/Star.png'
  //Note étoiles
  const Rating = ({rating}) => {
     let notLogement = []
+    /*On boucle au maximum 5 fois*/
     for (let i = 0; i < 5; i++) {
         if (i < rating ){
             notLogement.push(<img className='star'key={i} src={Star} alt='' />) 

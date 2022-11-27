@@ -7,6 +7,7 @@ const Dropdown = ({title, description}) => {
   const handleOpen = () => {
     setOpen(!open);
   };
+  /*On test le "type" de contenu. Si c'est une string on met dans un tableau sinon on ne change pas.*/
   let newContent;
   (typeof description === 'string') ? newContent = [description] : newContent = description;
 
@@ -16,6 +17,7 @@ const Dropdown = ({title, description}) => {
           <div className='dropdownTitle'>{title}</div>
           <img className='dropdownVector' src={Vector} alt='' onClick={handleOpen} />
       </div>
+      {/*Ouverture du dropdown, affichage de la balise "p" et son contenu.*/}
       {open ? (
         <div className='dropdownText'>
           {
@@ -31,5 +33,3 @@ const Dropdown = ({title, description}) => {
 };
 
 export default Dropdown;
-
-/*<p>{description}</p>*/

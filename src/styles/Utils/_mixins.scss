@@ -25,12 +25,3 @@
     align-items: center;
     justify-content: $value;
 }
-
-//ANIMATION
-@mixin transition {
-    @for $i from 1 through 20{
-    &:nth-child(#{$i}) {
-        animation: SlideDown #{$i * .5}s ease-in;
-      }
-    }
-}
