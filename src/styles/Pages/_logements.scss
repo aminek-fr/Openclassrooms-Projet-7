@@ -16,6 +16,7 @@
         .articleContainerLogements{
             @include desktop{
                 @include flexbox(space-between);
+                margin-top: 30px;
             }
             .containerInformation{
                 width: 100%;
