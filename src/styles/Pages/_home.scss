@@ -6,12 +6,53 @@
     margin: auto;
     @include desktop{
         max-width: 1440px;
+        margin-top: 20px;
     }
     .sectionContainer {
         padding: 0 15px 15px 15px;
         @include desktop{
             max-width: 1440px;
             padding: 0;
+        }
+        .bannerContainer{
+            width: 100%;
+            height: 111px;
+            border-radius: 10px;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url('../../assets/BannerImg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            @include flexbox(flex-start);
+            @include tablette{
+                border-radius: 20px;
+                margin: 0 auto 40px auto;
+                @include flexbox(center);
+            }
+            @include desktop{
+                max-width: 1440px;
+                width: 90%;
+                height: 223px;
+                border-radius: 25px;
+                margin: 0 auto 40px auto;
+                @include flexbox(center);
+            }
+            h1{
+                font-weight: 500;
+                color: $colorSecondary;
+                font-size: 24px;
+                display: flex;
+                flex-direction: column;
+                padding-left: 10px;
+                @include tablette{
+                    flex-direction: row;
+                    font-size: 30px;
+                }
+                @include desktop{
+                    max-width: 1440px;
+                    font-size: 48px;
+                    flex-direction: row;
+                }
+            }
         }
         .articleContainer{
             width: 100%;
@@ -23,7 +64,7 @@
                 height: 100%;
                 margin: 20px 0 20px 0;
                 padding-bottom: 30px;
-                border-radius: 25px;
+                border-radius: 20px;
                 background-color: $colorTertiary;
             }
             @include desktop{

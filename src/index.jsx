@@ -7,9 +7,9 @@ import {
 import Home from './pages/Home';
 import About from './pages/About';
 import Logement from './pages/Logements';
+import Error404 from './pages/Error404';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Error404 from './components/Error404';
 import './styles/main.scss';
 
 const container = document.getElementById('root');
